@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David WASCAT</title>
+  <link rel="stylesheet" href="Styles/css.css">
+  <style>
+    #google:hover {
+      text-decoration: underline;
+      color: white;
+    }
+
+    #facebook:hover {
+      text-decoration: underline;
+      color: white;
+    }
+
+    .formulaire {
+      background-color: #90aead;
+      margin-top: 50px;
+      padding-left: 300px;
+    }
+
+    .formulaire input {
+      height: 40px;
+      width: 600px;
+      margin-bottom: 30px;
+      border: none;
+      border-radius: 15px;
+    }
+
+    input::placeholder {
+      padding-left: 0px;
+    }
+
+    input {
+      padding-left: 15px;
+    }
+
+    textarea {
+      padding-top: 15px;
+      padding-left: 15px;
+    }
+
+    #nom{
+      margin-top: 30px;
+    }
+
+    #envoyer {
+      padding: 20px 20px;
+      background-color: #244855;
+      border: none;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      color: white;
+      font-size: 20px;
+    }
+
+    #envoyer:hover {
+      cursor: pointer;
+    }
+
+    #message {
+      height: 250px;
+      margin-bottom: 30px;
+      border: none;
+      border-radius: 15px;
+    }
+
+
+  </style>
+</head>
+<body>
+
+    <div class="wrapper">
+
+      <div class="sidebar">
+        <div class="profile">
+          <img src="Profile.jpg">
+          <h3>David WASCAT</h3>
+          <p>Infirmier libéral</p>
+
+          <ul>
+            <li><a href="accueil.html">
+              <span class="icon"><i class="fas fa-home"></i></span>
+              <span class="item">Accueil</span>
+            </a></li>
+            <li><a href="fil.html">
+              <span class="icon"><i class="fa-solid fa-notes-medical"></i></span>
+              <span class="item">Le fil info</span>
+            </a></li>
+            <li><a href="soins.html">
+              <span class="icon"><i class="fa-solid fa-user-doctor"></i></span>
+              <span class="item">Soins proposés</span>
+            </a></li>
+            <li><a href="zone.html">
+              <span class="icon"><i class="fa-solid fa-car"></i></span>
+              <span class="item">Zone d'intervention</span>
+            </a></li>
+            <li><a href="#" class="active">
+              <span class="icon"><i class="fa-solid fa-phone"></i></span>
+              <span class="item">Contact</span>
+            </a></li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="top_navbar">
+          <div class="hamburger">
+            <a><i class="fas fa-bars"></i></a>
+          </div>
+              <div class="right-section">
+                <div>
+                  <img class="caducet" src="/images/caducée.jpg">
+                </div>
+                <div class="nom">
+                  <p style="font-weight: bold;">CABINET INFIRMIER </p><p> David WASCAT<br>Soins infirmiers à domicile</p>
+                </div>
+                <div class="numero-adresse">
+                  <p style="font-weight: bold;">06. 09. 60. 67. 77. </p><p> 6 rue du Hasard <br> 62215 OYE-PLAGE</p>
+                </div>
+                <div class="horaires">
+                  <p style="font-weight: bold;">7j/7 </p><p> 5h30 - 21h</p>
+                </div>
+                <div class="contact">
+                  <a href="Contact.html"><button class="prise-rdv"><p class="prise-rdv-text">PRENDRE <br> RENDEZ-VOUS</p></button></a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="banner">
+        <button class="banner-image" style="background-image: url(images/oye-plage3.jpg); "
+        ><p style="color: white; font-size: 30px; margin-left: 200px; margin-top: 200px;">Contact</p></button>
+      </div>
+
+      <div class="google">
+        <div><p style="color: white; text-shadow: black 1px 1px 1px; font-size: 30px;">Retrouvez David WASCAT sur </p></div>
+        <div id="google" style="position: relative; margin-top: -42px; margin-left: 410px; font-size: 30px;"><a href="https://maps.app.goo.gl/M7i4mdTBXeCfMXWd7"><p style="color: white; text-shadow: black 1px 1px 1px;">Google</p></a></div>
+        <div style="position: relative; margin-top: -41px; margin-left: 515px; font-size: 30px;"><p style="color: white; text-shadow: black 1px 1px 1px;"> et </p></div>
+        <div id="facebook" style="position: relative; margin-top: -40px; margin-left: 550px; font-size: 30px;"><a href="https://www.facebook.com/share/15ye5Cv5an/"><p style="color: white; text-shadow: black 1px 1px 1px;">Facebook</p></a></div>
+      </div>
+
+      <div class="formulaire">
+        <p style="color: white; text-shadow: black 1px 1px 1px; font-size: 30px;">Vous souhaitez prendre rendez vous ? Privilégiez l'appel téléphonique. Vous pouvez également remplir ce formulaire :</p>
+        <form >
+          <label></label>
+          <input type="text" name="nom" id="nom" placeholder="Nom"> <br>
+          <input type="text" name="prénom" id="prénom" placeholder="Prénom"> <br>
+          <input type="text" name="adresse" id="adresse" placeholder="Adresse"> <br>
+          <input type="number" name="numéro de téléphone" id="téléphone" placeholder="Numéro de téléphone"> <br>
+          <textarea name="message" cols="80" rows="10" id="message" placeholder="Votre message/demande de soins"></textarea> <br>
+          <button type="button" id="envoyer" onclick="sendSMS()">Envoyer</button>
+        </form>
+        
+      </div>
+
+      <div class="footer">
+        <p style="font-size: 20px; color: white; margin-left: 250px;">Liens utiles :</p>
+        <a href="https://www.ordre-infirmiers.fr/"><p class="lien-ordre">Site de l'Ordre des infirmiers</p></a> <br>
+        <p style="color: white; margin-left: 250px;">Ce site est un site d'information.<br>
+        Son but est d'informer les patients sur les soins pratiqués par David WASCAT.<br>
+        Il n'a pas pour vocation la promotion de son activité, conformément aux directives de l'Ordre infirmier.<br>
+        Ce site tient compte de l'article R.4312-37 du Code de la santé publique : "La profession d'infirmier ne doit pas être pratiquée comme un commerce. <br>
+        Tous les procédés directs ou indirects de réclame ou de publicité sont interdits aux infirmiers, infirmières (...)"</p><br>
+        <p style="color: white; margin-left: 250px;">Copyright © Tous droits réservés</p>
+      </div>
+
+      <div class="appel">
+        <a href="tel:+33666668151"><button class="button-appel"><i class="fa-solid fa-phone"></i></button></a>
+      </div>
+
+    <script>
+      var hamburger = document.querySelector(".hamburger");
+      hamburger.addEventListener("click", function(){
+        document.querySelector("body").classList.toggle("active");
+      })
+
+      function sendSMS() {
+            // Get the values from the form inputs
+            var name = document.getElementById("nom").value;
+            var surname = document.getElementById("prénom").value;
+            var address = document.getElementById("adresse").value;
+            var message = document.getElementById("message").value;
+
+            // Create the SMS body with the form data
+            var smsBody = "Name: " + name + "\n" +
+                          "Surname: " + surname + "\n" +
+                          "Address: " + address + "\n" +
+                          "Message: " + message;
+
+            // Replace with the phone number where the SMS should be sent
+            var phoneNumber = "phonenumber"; 
+
+            // Create the SMS link
+            var smsLink = "sms:" + phoneNumber + "?body=" + encodeURIComponent(smsBody);
+
+            // Open the SMS app with the pre-filled message
+            window.location.href = smsLink;
+        }
+
+    </script>
+
+</body>
+</html>
