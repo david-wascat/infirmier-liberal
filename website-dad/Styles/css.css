@@ -1,0 +1,362 @@
+*{
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'open sans', sans-serif;
+}
+
+body{
+  background: white;
+  min-height: 100vh;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper .sidebar{
+  background: #244855;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 225px;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+  z-index: 3;
+}
+
+.wrapper .sidebar .profile{
+  margin-bottom: 30px;
+  text-align: center;
+  z-index: 3;
+}
+
+.wrapper .sidebar .profile img{
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  z-index: 3;
+}
+
+.wrapper .sidebar .profile h3{
+  color: white;
+  margin: 10px 0 5px;
+  z-index: 3;
+}
+
+.wrapper .sidebar .profile p{
+  color: rgb(180, 177, 177);
+  font-size: 14px;
+  padding-bottom: 30px;
+  z-index: 3;
+}
+
+.wrapper .sidebar ul li a{
+  display: block;
+  padding: 30px 13px;
+  border-bottom: 1px solid #244855;
+  color: white;
+  font-size: 16px;
+  z-index: 3;
+
+}
+
+.wrapper .sidebar ul li a .icon{
+  color: white;
+  width: 30px;
+  display: inline-block;
+  z-index: 3;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+  color: #244855;
+  background: white;
+  border-right: 2px solid #244855;
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+  color:#244855 ;
+}
+
+.wrapper .sidebar ul li a:hover::before,
+.wrapper .sidebar ul li a.active::before{
+  display: block;
+}
+
+.wrapper .section{
+  width: calc(100% - 225px);
+  margin-left: 225px;
+  transition: all 0.5s ease;
+  z-index: 3;
+}
+
+i {
+  z-index: 2;
+}
+
+.wrapper .section .top_navbar{
+  background-color: #244855;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.wrapper .section .top_navbar .hamburger a{
+  font-size: 50px;
+  color: white;
+}
+
+.wrapper .section .top_navbar .hamburger a:hover{
+  color: #90aead;
+}
+
+body.active .wrapper .sidebar{
+  left: -225px;
+}
+
+body.active .wrapper .section{
+  margin-left: 0;
+  width: 100%;
+}
+
+.body-présentation{
+  padding-bottom: 0;
+}
+
+.texte-accueil{
+  position: absolute;
+  top: 500px;
+  left: 1000px;
+  background-color: rgb(117, 107, 107);
+  opacity: 70%;
+  border: none;
+}
+
+.background .texte-accueil p{
+  font-size: 30px;
+  color: white;
+}
+
+.right-section {
+  padding-right: 200px;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+}
+
+.caducet {
+  padding-left: 40px;
+  margin-top: 0;
+  height: 100px;
+}
+
+.nom {
+  padding-left: 150px;
+  padding-top: 0;
+  margin-right: 100px;
+  color: white;
+  font-size: 23px;
+  position: absolute;
+}
+
+.numero-adresse {
+  padding-top: 0;
+  margin-left: 400px;
+  margin-right: 0px;
+  color: white;
+  font-size: 23px;
+  padding-bottom: 15px;
+  width: 300px;
+}
+
+.contact {
+  margin-right: 0px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.prise-rdv {
+  margin-left: 0px;
+  margin-top: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  border-color: #90aead;
+  background-color: rgb(255, 255, 255);
+  color: #90aead;
+  height: 100px;
+  width: 150px;
+}
+
+.prise-rdv-text{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.prise-rdv:hover {
+  border-color: #90aead;
+  background-color: #90aead;
+  color: rgb(255, 255, 255);
+}
+
+.right-section .icon{
+  font-size: 30px;
+  color: white;
+  position: absolute;
+}
+
+.banner-image {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(128, 128, 128, .2);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 450px;
+}
+
+.banner-image p {
+  left: 0;
+  font-size: 25px;
+  color: rgb(113, 50, 75);
+}
+
+.banner-details {
+
+  font-size: 40px;
+
+}
+
+.banner-text-style{
+  border: none;
+  background-color: #fbe9b0;
+  opacity: 70%;
+  height: 500px;
+  width: 500px;
+  z-index: 2;
+}
+
+.banner-text{
+  text-align: center;
+  position: absolute;
+  top: 250px;
+  left: 800px;
+  z-index: 2;
+}
+
+.banner{
+  position: relative;
+  z-index: -2;
+}
+
+.google{
+  padding-left: 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 2;
+  margin-top: 50px;
+  background-color: #90aead;
+}
+
+.section{
+  position: fixed;
+}
+
+.hamburger i{
+  cursor: pointer;
+}
+
+.banner i{
+  margin-left: 20px; 
+}
+
+.google-form{
+  position: absolute;
+  padding-left: 300px;
+  padding-top: 1000px;
+  z-index: 2;
+}
+
+#bannerimage {
+  margin-top: -3px;
+  width: 100%;
+  height: 405px;
+  background-color: #90aead;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  z-index: -1;
+}
+
+.titre-banner-soins {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.footer {
+  background-color: #244855;
+  margin-top: 50px;
+  padding-top: 20px;
+  height: 300px;
+  margin-bottom: 0;
+}
+
+.lien-ordre {
+  color: white;
+  margin-left: 250px;
+  font-size: 20px;
+}
+
+.lien-ordre:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.button-appel {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 125px;
+  height: 100px;
+  padding: 20px 0;
+  z-index: 3;
+  background-color: #244855;
+  border-radius: 10px;
+}
+
+.button-appel:hover {
+  cursor: pointer;
+}
+
+.appel {
+  display: flex;
+}
+
+.horaires {
+  margin-left: 0px;
+  padding-top: 0;
+  margin-right: 50px;
+  color: white;
+  font-size: 23px;
+  width: 150px;
+}
+
+.button-appel i {
+  font-size: 60px;
+  color: white;
+}

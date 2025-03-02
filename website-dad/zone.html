@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David WASCAT</title>
+  <link rel="stylesheet" href="Styles/css.css">
+  <style>
+  .google-maps{
+    position: relative;
+    padding-right: 500px;
+    padding-left: 500px;
+    top: 50px;
+    bottom: 50px;
+    padding-bottom: 602px;
+    background-color: #90aead;
+  }
+  
+  .google-maps iframe{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: absolute;
+    height: 90%;
+    top: 0;
+  }
+  </style>
+</head>
+<body>
+
+    <div class="wrapper">
+
+      <div class="sidebar">
+        <div class="profile">
+          <img src="Profile.jpg">
+          <h3>David WASCAT</h3>
+          <p>Infirmier libéral</p>
+
+          <ul>
+            <li><a href="accueil.html">
+              <span class="icon"><i class="fas fa-home"></i></span>
+              <span class="item">Accueil</span>
+            </a></li>
+            <li><a href="fil.html">
+              <span class="icon"><i class="fa-solid fa-notes-medical"></i></span>
+              <span class="item">Le fil info</span>
+            </a></li>
+            <li><a href="soins.html">
+              <span class="icon"><i class="fa-solid fa-user-doctor"></i></span>
+              <span class="item">Soins proposés</span>
+            </a></li>
+            <li><a href="#" class="active">
+              <span class="icon"><i class="fa-solid fa-car"></i></span>
+              <span class="item">Zone d'intervention</span>
+            </a></li>
+            <li><a href="contact.html">
+              <span class="icon"><i class="fa-solid fa-phone"></i></span>
+              <span class="item">Contact</span>
+            </a></li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="top_navbar">
+          <div class="hamburger">
+            <a><i class="fas fa-bars"></i></a>
+          </div>
+              <div class="right-section">
+                <div>
+                  <img class="caducet" src="/images/caducée.jpg">
+                </div>
+                <div class="nom">
+                  <p style="font-weight: bold;">CABINET INFIRMIER </p><p> David WASCAT<br>Soins infirmiers à domicile</p>
+                </div>
+                <div class="numero-adresse">
+                  <p style="font-weight: bold;">06. 09. 60. 67. 77. </p><p> 6 rue du Hasard <br> 62215 OYE-PLAGE</p>
+                </div>
+                <div class="horaires">
+                  <p style="font-weight: bold;">7j/7 </p><p> 5h30 - 21h</p>
+                </div>
+                <div class="contact">
+                  <a href="Contact.html"><button class="prise-rdv"><p class="prise-rdv-text">PRENDRE <br> RENDEZ-VOUS</p></button></a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner">
+      <button class="banner-image" style="background-image: url(images/fond-d\'écran-5.avif); background-size: cover;"
+      ><p style="color: white; font-size: 30px; margin-left: 200px; margin-top: 200px;">Zone d'intervention</p></button>
+    </div>
+
+      <div class="google-maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1256.0503578620712!2d2.0441243413468193!3d50.977328962775914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dc42bc1c0da283%3A0x71d6df8fe996354!2sWascat%20David!5e0!3m2!1sfr!2sfr!4v1734201018717!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="appel">
+        <a href="tel:+33666668151"><button class="button-appel"><i class="fa-solid fa-phone"></i></button></a>
+      </div>
+
+    <script>
+      var hamburger = document.querySelector(".hamburger");
+      hamburger.addEventListener("click", function(){
+        document.querySelector("body").classList.toggle("active");
+      });
+    </script>
+
+</body>
+</html>

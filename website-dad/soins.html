@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David WASCAT</title>
+  <link rel="stylesheet" href="Styles/css.css">
+
+  <style>
+.soins-d-hygiène {
+    background-image: url(images/Soins_hygiene_confort_850_523.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    margin-top: 55px;
+    margin-right: 50px;
+    width: 300px;
+    height: 300px;
+    margin-left: 1000px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #244855;
+    font-size: 25px;
+    font-weight: bold;
+    z-index: 0;
+  }
+  
+  .soins-d-hygiène:hover {
+    cursor: pointer;
+    background-position: right;
+    background-size: 600px;
+    transition: 1s;
+  }
+  
+  .soins-spécialisés {
+    background-image: url(images/enfant-perf.jpg);
+    background-position: top;
+    background-size: cover;
+    position: absolute;
+    margin-top: 55px;
+    margin-right: 50px;
+    width: 300px;
+    height: 300px;
+    margin-left: 650px;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #244855;
+  }
+  
+  .soins-spécialisés:hover {
+    cursor: pointer;
+    background-position: center;
+    background-size: 600px;
+    transition: 1s;
+  }
+  
+  .soins-courants {
+    background-image: url(images/pansement1.jpg);
+    background-size: cover;
+    position: absolute;
+    margin-top: 55px;
+    margin-right: 50px;
+    width: 300px;
+    height: 300px;
+    margin-left: 300px;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #244855;
+  }
+  
+  .soins-courants:hover {
+    cursor: pointer;
+    background-position: center;
+    background-size: 600px;
+    transition: 1s;
+  }
+  
+  #soins-courants {
+    padding-top: 150px;
+    background-image: url(images/banner-image.jpg);
+    background-size: cover;
+    margin-top: 50px;
+    padding-bottom: 150px;
+    padding-left: 700px;
+  }
+  
+  #soins-spécialisés {
+    padding-top: 150px;
+    background-image: url(images/banner-image1.jpg);
+    background-size: cover;
+    margin-top: 50px;
+    padding-bottom: 150px;
+    padding-left: 400px;
+  }
+  
+  #soins-d-hygiène {
+    padding-top: 150px;
+    background-image: url(images/banner-image2.jpg);
+    background-size: cover;
+    margin-top: 50px;
+    padding-bottom: 150px;
+    padding-left: 700px;
+  }
+
+  </style>
+</head>
+<body>
+
+    <div class="wrapper">
+
+      <div class="sidebar">
+        <div class="profile">
+          <img src="Profile.jpg">
+          <h3>David WASCAT</h3>
+          <p>Infirmier libéral</p>
+
+          <ul>
+            <li><a href="accueil.html">
+              <span class="icon"><i class="fas fa-home"></i></span>
+              <span class="item">Accueil</span>
+            </a></li>
+            <li><a href="fil.html">
+              <span class="icon"><i class="fa-solid fa-notes-medical"></i></span>
+              <span class="item">Le fil info</span>
+            </a></li>
+            <li><a href="#" class="active">
+              <span class="icon"><i class="fa-solid fa-user-doctor"></i></span>
+              <span class="item">Soins proposés</span>
+            </a></li>
+            <li><a href="zone.html">
+              <span class="icon"><i class="fa-solid fa-car"></i></span>
+              <span class="item">Zone d'intervention</span>
+            </a></li>
+            <li><a href="contact.html">
+              <span class="icon"><i class="fa-solid fa-phone"></i></span>
+              <span class="item">Contact</span>
+            </a></li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="top_navbar">
+          <div class="hamburger">
+            <a><i class="fas fa-bars"></i></a>
+          </div>
+              <div class="right-section">
+                <div>
+                  <img class="caducet" src="/images/caducée.jpg">
+                </div>
+                <div class="nom">
+                  <p style="font-weight: bold;">CABINET INFIRMIER </p><p> David WASCAT<br>Soins infirmiers à domicile</p>
+                </div>
+                <div class="numero-adresse">
+                  <p style="font-weight: bold;">06. 09. 60. 67. 77. </p><p> 6 rue du Hasard <br> 62215 OYE-PLAGE</p>
+                </div>
+                <div class="horaires">
+                  <p style="font-weight: bold;">7j/7 </p><p> 5h30 - 21h</p>
+                </div>
+                <div class="contact">
+                  <a href="Contact.html"><button class="prise-rdv"><p class="prise-rdv-text">PRENDRE <br> RENDEZ-VOUS</p></button></a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="banner">
+        <button class="banner-image" style="background-image: url('images/oye-plage1.jpg');"
+        ><p style="color: white; font-size: 30px; margin-left: 200px; margin-top: 200px;">Soins proposés</p></button>
+      </div>
+
+      <div id="bannerimage">
+        <a href="#soins-courants"><button class="soins-courants"><p>Soins courants</p></button></a>
+        <a href="#soins-spécialisés"><button class="soins-spécialisés"><p>Soins spécialisés</p></button></a>
+        <a href="#soins-d-hygiène"><button class="soins-d-hygiène"><p>Soins pour le maintien à domicile</p></button></a>
+      </div>
+
+      <div style="display: flex;" id="soins-courants">
+        <div style="  padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px; background-color: rgba(36, 72, 85, .6);">
+          <p class="titre-banner-soins">Les soins courants</p> <br>
+          <p style="font-size: 20px; color: white;">- Prélèvements et injections<br>
+            - Pansements courants<br>
+            - Pansements lourds & complexes<br>
+            - Pose de sonde, alimentation<br>
+            - Soins portant sur l'appareil respiratoire<br>
+            - Soins portant sur l'appareil génito-urinaire<br>
+            - Soins portant sur l'appareil digestif<br>
+            - Tests & soins portant sur l'enveloppe cutanée<br>
+            - Surveillance et observation d'un patient à domicile<br>
+          </p>
+        </div>
+      </div>
+
+      <div style="display: flex;" id="soins-spécialisés">
+        <div style="  padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px; background-color: rgba(36, 72, 85, .6);">
+          <p class="titre-banner-soins">Les soins spécialisés</p> <br>
+          <p style="font-size: 20px; color: white;">- Soins d'entretien des cathéters <br>
+            - Injections & Prélèvements<br>
+            - Perfusion intraveineuse par l’intermédiaire <br> d’un cathéter veineux central ou d’un site implanté<br>
+            - Actes du traitement à domicile d'un patient <br> immunodéprimé ou cancéreux<br>
+            - Traitement à domicile d'un patient atteint de <br> mucoviscidose par perfusions d'antibiotiques sous surveillance <br> continue selon le protocole thérapeutique rédigé par un des <br> médecins de l'équipe soignant le patient<br>
+            - Soins portant sur l'appareil digestif et urinaire <br>
+            - Prise en charge à domicile d’un patient insulino-traité <br>
+            
+          </p>
+        </div>
+      </div>
+
+      <div style="display: flex;" id="soins-d-hygiène">
+        <div style="  padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px; background-color: rgba(36, 72, 85, .6);">
+          <p class="titre-banner-soins">Les soins pour le maintien à domicile</p> <br>
+          <p style="font-size: 20px; color: white;">Sa durée varie d'un patient à l'autre, notamment<br>
+            en raison de son âge, de son handicap, de son niveau <br> de recouvrement de santé. <br>
+            Les soins d'hygiène - autrement dit "toilette" - sont <br> d'une durée moyenne de 30 minutes.<br>
+          </p>
+        </div>
+      </div>
+
+      <div class="appel">
+        <a href="tel:+33666668151"><button class="button-appel"><i class="fa-solid fa-phone"></i></button></a>
+      </div>
+
+    <script>
+      var hamburger = document.querySelector(".hamburger");
+      hamburger.addEventListener("click", function(){
+        document.querySelector("body").classList.toggle("active");
+      })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David WASCAT</title>
+  <link rel="stylesheet" href="Styles/css.css">
+</head>
+<body class="body-présentation">
+
+    <div class="wrapper">
+
+      <div class="sidebar">
+        <div class="profile">
+          <img src="Profile.jpg">
+          <h3>David WASCAT</h3>
+          <p>Infirmier libéral</p>
+
+          <ul>
+            <li><a href="accueil.html">
+              <span class="icon"><i class="fas fa-home"></i></span>
+              <span class="item">Accueil</span>
+            </a></li>
+            <li><a href="#" class="active">
+              <span class="icon"><i class="fa-solid fa-notes-medical"></i></span>
+              <span class="item">Le fil info</span>
+            </a></li>
+            <li><a href="soins.html">
+              <span class="icon"><i class="fa-solid fa-user-doctor"></i></span>
+              <span class="item">Soins proposés</span>
+            </a></li>
+            <li><a href="zone.html">
+              <span class="icon"><i class="fa-solid fa-car"></i></span>
+              <span class="item">Zone d'intervention</span>
+            </a></li>
+            <li><a href="contact.html">
+              <span class="icon"><i class="fa-solid fa-phone"></i></span>
+              <span class="item">Contact</span>
+            </a></li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="top_navbar">
+          <div class="hamburger">
+            <a><i class="fas fa-bars"></i></a>
+          </div>
+              <div class="right-section">
+                <div>
+                  <img class="caducet" src="/images/caducée.jpg">
+                </div>
+                <div class="nom">
+                  <p style="font-weight: bold;">CABINET INFIRMIER </p><p> David WASCAT<br>Soins infirmiers à domicile</p>
+                </div>
+                <div class="numero-adresse">
+                  <p style="font-weight: bold;">06. 09. 60. 67. 77. </p><p> 6 rue du Hasard <br> 62215 OYE-PLAGE</p>
+                </div>
+                <div class="horaires">
+                  <p style="font-weight: bold;">7j/7 </p><p> 5h30 - 21h</p>
+                </div>
+                <div class="contact">
+                  <a href="Contact.html"><button class="prise-rdv"><p class="prise-rdv-text">PRENDRE <br> RENDEZ-VOUS</p></button></a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner">
+      <button class="banner-image" style="background-image: url(images/banner-image3.jpg); background-position: bottom; background-size: auto;"
+      ><p style="color: white; font-size: 30px; margin-left: 200px; margin-top: 200px; text-shadow: black 1px 1px;">Le fil info</p></button>
+    </div>
+
+    <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100063527800456&amp;rdid=5c8WOwAEOIVRVmgx" data-tabs="messages &#xe9;v&#xe8;nements" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" style="left: 400px; top: 50px; width: 500px;">
+      <blockquote cite="https://www.facebook.com/profile.php?id=100063527800456&amp;rdid=5c8WOwAEOIVRVmgx" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=100063527800456&amp;rdid=5c8WOwAEOIVRVmgx">Infirmier Libéral Wascat David</a></blockquote>
+    </div>
+
+        <div class="appel">
+          <a href="tel:+33666668151"><button class="button-appel"><i class="fa-solid fa-phone"></i></button></a>
+        </div>
+
+    <script>
+      var hamburger = document.querySelector(".hamburger");
+      hamburger.addEventListener("click", function(){
+        document.querySelector("body").classList.toggle("active");
+      })
+    </script>
+   <div id="fb-root"></div>
+   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v22.0"></script>
+
+</body>
+</html>
