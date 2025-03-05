@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/css.css">
-    <link rel="stylesheet" href="index/css.css">
+    <link rel="stylesheet" href="styles/soins.css">
     <title>David Wascat</title>
 </head>
 <body>
@@ -43,16 +43,75 @@
                 <p style="font-weight: bold;">CABINET INFIRMIER</p>
                 <p>David WASCAT<br>Soins infirmiers à domicile</p>
             </div>
+            <div class="numero-adresse">
+                <p style="font-weight: bold;">06. 09. 60. 67. 77. </p><p> 6 rue du Hasard <br> 62215 OYE-PLAGE</p>
+            </div>
+            <div class="horaires">
+                <p style="font-weight: bold;">7j/7 </p><p> 5h30 - 21h</p>
+            </div>
+            <div class="contact">
+                <a href="Contact.html"><button class="prise-rdv"><p class="prise-rdv-text">PRENDRE <br> RENDEZ-VOUS</p></button></a>
+            </div>
         </div>
     </div>
 
-
-
-    <div class="main-content">
-        <div class="container">
-            <h1>David WASCAT</h1>
-        </div>
+    <div class="banner">
+        <img src="images/oye-plage1.jpg">
+        <div class="overlay">Soins proposés</div>
     </div>
+
+    <div class="flex-mobile">
+      <div id="bannerimage">
+        <a href="#soins-courants"><button class="soins-courants"><p>Soins courants</p></button></a> <br>
+        <a href="#soins-spécialisés"><button class="soins-spécialisés"><p>Soins spécialisés</p></button></a> <br>
+        <a href="#soins-d-hygiène"><button class="soins-d-hygiène"><p>Soins pour le maintien à domicile</p></button></a>
+      </div>
+    </div>
+
+
+      
+      <div id="soins-courants">
+          <p class="titre-banner-soins">Les soins courants</p> <br>
+          <p style="font-size: 20px; color: white;">- Prélèvements et injections<br>
+            - Pansements courants<br>
+            - Pansements lourds & complexes<br>
+            - Pose de sonde, alimentation<br>
+            - Soins portant sur l'appareil respiratoire<br>
+            - Soins portant sur l'appareil génito-urinaire<br>
+            - Soins portant sur l'appareil digestif<br>
+            - Tests & soins portant sur l'enveloppe cutanée<br>
+            - Surveillance et observation d'un patient à domicile<br>
+          </p>
+      </div>
+
+      <div style="display: flex;" id="soins-spécialisés">
+        <div>
+          <p class="titre-banner-soins">Les soins spécialisés</p> <br>
+          <p style="font-size: 20px; color: white;">- Soins d'entretien des cathéters <br>
+            - Injections & Prélèvements<br>
+            - Perfusion intraveineuse par l’intermédiaire <br> d’un cathéter veineux central ou d’un site implanté<br>
+            - Actes du traitement à domicile d'un patient <br> immunodéprimé ou cancéreux<br>
+            - Traitement à domicile d'un patient atteint de <br> mucoviscidose par perfusions d'antibiotiques sous surveillance <br> continue selon le protocole thérapeutique rédigé par un des <br> médecins de l'équipe soignant le patient<br>
+            - Soins portant sur l'appareil digestif et urinaire <br>
+            - Prise en charge à domicile d’un patient insulino-traité <br>
+            
+          </p>
+        </div>
+      </div>
+
+      <div style="display: flex;" id="soins-d-hygiène">
+        <div style="  padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px; background-color: rgba(36, 72, 85, .6);">
+          <p class="titre-banner-soins">Les soins pour le maintien à domicile</p> <br>
+          <p style="font-size: 20px; color: white;">Sa durée varie d'un patient à l'autre, notamment<br>
+            en raison de son âge, de son handicap, de son niveau <br> de recouvrement de santé. <br>
+            Les soins d'hygiène - autrement dit "toilette" - sont <br> d'une durée moyenne de 30 minutes.<br>
+          </p>
+        </div>
+      </div>
+      </div>
 
     <script>
         let btn = document.querySelector("#hamburger");
