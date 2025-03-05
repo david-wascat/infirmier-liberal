@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/css.css">
+    <link rel="stylesheet" href="index/css.css">
+    <title>David Wascat</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+        <div class="top">
+            <p class="sidebar-text-profile">David WASCAT</p>
+        </div>
+            <ul>
+                <li><a href="index.html">
+                  <span class="icon"><i class="fas fa-home"></i></span>
+                </a></li>
+                <li><a href="fil.html">
+                  <span class="icon"><i class="fa-solid fa-notes-medical"></i></span>
+                </a></li>
+                <li><a href="soins.html">
+                  <span class="icon"><i class="fa-solid fa-user-doctor"></i></span>
+                </a></li>
+                <li><a href="zone.html">
+                  <span class="icon"><i class="fa-solid fa-car"></i></span>
+                </a></li>
+                <li><a href="contact.html" class="active">
+                  <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                </a></li>
+              </ul>
+        </div>
+        <div class="top-navbar">
+            <div id="hamburger">
+                <a><i class="fas fa-bars"></i></a>
+            </div>
+            <div>
+                <img class="caducet" src="images/caducée.jpg">
+            </div>
+            <div class="nom">
+                <p style="font-weight: bold;">CABINET INFIRMIER</p>
+                <p>David WASCAT<br>Soins infirmiers à domicile</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="main-content">
+        <div class="container">
+            <h1>David WASCAT</h1>
+        </div>
+    </div>
+
+    <script>
+        let btn = document.querySelector("#hamburger");
+        let sidebar = document.querySelector(".sidebar");
+
+        btn.onclick = function () {
+            sidebar.classList.toggle('active');
+        };
+    </script>
+</body>
+</html>

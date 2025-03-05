@@ -1,0 +1,257 @@
+@media screen and (max-device-width: 768px) {
+
+body {
+    margin: 0;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 0em;
+    background-color: #244855;
+    padding: 0.4rem 0.8rem;
+    transition: all 0.5s ease;
+    color: white;
+}
+
+.sidebar .sidebar-text-profile{
+    display: none;
+}
+
+.sidebar ul li {
+    position: relative;
+    list-style-type: none;
+    height: 50px;
+    width: 90%;
+    margin: 0.8rem auto;
+    line-height: 50px;
+}
+
+.sidebar ul li a {
+    color: #244855;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: -3em;
+}
+
+.sidebar ul li a i {
+    min-width: 50px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    background-color: white;
+    display: none;
+    transition: all 1s ease;
+}
+
+.sidebar.active .sidebar-text-profile {
+    display: block;
+}
+
+.sidebar.active ul li a i {
+    display: block;
+    transition: all 1s ease;
+} 
+
+.sidebar ul li a:hover {
+    background-color: white;
+    color: #244855;
+}
+
+.container {
+    margin-left: 2em;
+}
+
+.sidebar.active ~ .container {
+    margin-left: 4em;
+    width: calc(100% - 4em);
+}
+
+.sidebar.active ~ .top-navbar {
+    margin-left: 5.55em;
+}
+
+.sidebar.active {
+    width: 4em;
+}
+
+#hamburger {
+    position: absolute;
+    font-size: 2em;
+    color: white;
+    padding-top: 0.35em;
+}
+
+.top-navbar {
+    background-color: #244855;
+    height: 4em;
+    margin-left: 1.55em;
+    transition: all 0.5s ease;
+}
+
+.top-navbar .caducet {
+    height: 3em;
+    margin-top: 0.5em;
+    margin-left: 3.5em;
+}
+
+.top-navbar .nom {
+    color: white;
+    margin-top: -5.5em;
+    font-size: 0.7em;
+    margin-left: 10em;
+}
+
+.numero-adresse {
+    display: none;
+}
+
+.contact {
+    display: none;
+}
+
+.horaires {
+    display: none;
+}
+
+}
+
+@media screen and (min-device-width: 768px) {
+    body {
+        margin: 0;
+    }
+    
+    .sidebar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 0em;
+        background-color: #244855;
+        padding: 0.4rem 0.8rem;
+        transition: all 0.5s ease;
+        color: white;
+    }
+    
+    .sidebar .sidebar-text-profile{
+        display: none;
+    }
+    
+    .sidebar ul li {
+        position: relative;
+        list-style-type: none;
+        height: 50px;
+        width: 90%;
+        margin: 0.8rem auto;
+        line-height: 50px;
+    }
+    
+    .sidebar ul li a {
+        color: #244855;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding: 10px;
+        margin-left: -3em;
+    }
+    
+    .sidebar ul li a i {
+        min-width: 100px;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        background-color: white;
+        display: none;
+        transition: all 1s ease;
+    }
+    
+    .sidebar.active .sidebar-text-profile {
+        display: block;
+    }
+    
+    .sidebar.active ul li a i {
+        display: block;
+        transition: all 1s ease;
+    } 
+    
+    .sidebar ul li a:hover {
+        background-color: white;
+        color: #244855;
+    }
+    
+    .container {
+        margin-left: 2em;
+    }
+    
+    .sidebar.active ~ .container {
+        margin-left: 4em;
+        width: calc(100% - 4em);
+    }
+    
+    .sidebar.active ~ .top-navbar {
+        margin-left: 5.55em;
+    }
+    
+    .sidebar.active {
+        width: 7em;
+    }
+    
+    #hamburger {
+        position: absolute;
+        font-size: 3em;
+        color: white;
+        padding-top: 0.5em;
+        margin-left: 1em;
+        cursor: pointer;
+    }
+    
+    .top-navbar {
+        background-color: #244855;
+        height: 7em;
+        margin-left: 1.55em;
+        transition: all 0.5s ease;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .top-navbar .caducet {
+        height: 5em;
+        margin-top: 0.5em;
+        margin-left: 7.5em;
+    }
+    
+    .top-navbar .nom {
+        color: white;
+        margin-top: -4.8em;
+        font-size: 1.5em;
+        margin-left: 10em;
+    }
+
+    .numero-adresse {
+        display: block;
+        color: white;
+        margin-top: -5.5em;
+        font-size: 1.5em;
+        margin-left: 23em;
+    }
+
+    .horaires {
+        display: block;
+        color: white;
+        margin-top: -4.8em;
+        font-size: 1.5em;
+        margin-left: 34em;
+    }
+
+    .contact {
+        display: block;
+        color: white;
+        margin-top: -3.8em;
+        font-size: 1.5em;
+        margin-left: 40em;
+    }
+}
