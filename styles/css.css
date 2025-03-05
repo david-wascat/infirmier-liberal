@@ -5,9 +5,12 @@ body {
     height: 100%;
 }
 
+.wrapper {
+    position: fixed;
+}
 
 .sidebar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
@@ -93,6 +96,7 @@ body {
 .top-navbar {
     background-color: #244855;
     height: 4em;
+    width: 100em;
     margin-left: 1.55em;
     transition: all 0.5s ease;
 }
@@ -135,11 +139,20 @@ body {
     position: fixed;
 }
 
+.sidebar.active ul li a {
+    pointer-events: all;
+    cursor: pointer;
+}
+
 }
 
 @media screen and (min-device-width: 768px) {
     body {
         margin: 0;
+    }
+
+    .wrapper {
+        position: fixed;
     }
     
     .sidebar {
@@ -197,8 +210,13 @@ body {
         display: block;
         transition: all 1s ease;
     } 
+
+    .sidebar.active ul li a {
+        pointer-events: all;
+        cursor: pointer;
+    }
     
-    .sidebar ul li a:hover {
+    .sidebar.active ul li a:hover {
         background-color: white;
         color: #244855;
     }
@@ -236,6 +254,7 @@ body {
         transition: all 0.5s ease;
         justify-content: center;
         align-items: center;
+        width: 100em;
     }
     
     .top-navbar .caducet {
