@@ -1,5 +1,5 @@
 @media screen and (min-device-width: 768px) {
-    .infos {
+     .infos {
         background-color: #90aead;
         margin-top: 3.125em;
         padding-top: 1.25em;
@@ -75,6 +75,10 @@
         border: none;
     }
 
+    #bannerimage {
+        flex-direction: row;
+    }
+
     }
     
     @media screen and (max-device-width: 768px) {
@@ -88,7 +92,7 @@
         
         .banner img {
             width: 100%;
-            height: 150px;
+            height: 250px;
         }
         
         .banner {
@@ -107,54 +111,6 @@
             text-shadow: black 1px 0 10px;
         }
 
-        .soins-courants {
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 20px;
-            padding-bottom: 20px; 
-            background-image: url("/images/pansement1.jpg");
-            background-size: cover;
-            height: 10em;
-            width: 75%;
-            margin-left: 2.5em;
-            text-shadow: black 1px 0 10px;
-            color: white;
-            font-size: 2em;
-            border: none;
-        }
-    
-        .soins-spécialisés {
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 20px;
-            padding-bottom: 20px; 
-            background-image: url("/images/enfant-perf.jpg");
-            background-size: cover;
-            height: 10em;
-            width: 75%;
-            margin-left: 2.5em;
-            text-shadow: black 1px 0 10px;
-            color: white;
-            font-size: 2em;
-            border: none;
-        }
-    
-        .soins-d-hygiène {
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 20px;
-            padding-bottom: 20px; 
-            background-image: url("/images/Soins_hygiene_confort_850_523.jpg");
-            background-size: cover;
-            height: 10em;
-            width: 75%;
-            margin-left: 2.5em;
-            text-shadow: black 1px 0 10px;
-            color: white;
-            font-size: 2em;
-            border: none;
-        }
-
         #bannerimage {
             flex-direction: column;
         }
@@ -168,5 +124,93 @@
             padding-right: 20px;
             padding-top: 20px;
             padding-bottom: 20px; background-color: rgba(36, 72, 85, .6);
+        }
+
+        .soins-liste {
+            margin-left: 2em;
+        }
+
+        .soins-courants img {
+            height: 300px;
+            margin-right: 0em;
+            margin-left: 0em;
+        }
+
+        .soins-courants {
+            text-shadow: black 1px 0 10px;
+            color: white;
+            font-size: 2em;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .soins-spécialisés img {
+            height: 300px;
+            margin-right: 0em;
+            margin-left: 0em;
+        }
+
+        .soins-spécialisés {
+            text-shadow: black 1px 0 10px;
+            color: white;
+            font-size: 2em;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .soins-d-hygiène img {
+            height: 300px;
+            margin-right: 0em;
+            margin-left: 0em;
+        }
+
+        .soins-d-hygiène {
+            text-shadow: black 1px 0 10px;
+            color: white;
+            font-size: 2em;
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        .soins-courants-texte {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .soins-courants-texte p {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            text-shadow: black 1px 0 10px;
+        }
+
+        .soins-spécialisés-texte {
+            position: absolute;
+            top: 22.5em;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .soins-spécialisés-texte p {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            text-shadow: black 1px 0 10px;
+        }
+
+        .soins-d-hygiène-texte {
+            position: absolute;
+            top: 32.5em;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .soins-d-hygiène-texte p {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            text-shadow: black 1px 0 10px;
         }
     }
