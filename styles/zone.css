@@ -27,9 +27,11 @@
     }
 
     .google-maps iframe {
+        margin-top: 2em;
+        margin-bottom: 5em;
         margin-left: 20em;
-        height: 400px;
-        width: 600px;
+        height: 25em;
+        width: 40em;
     }
     }
     
@@ -65,8 +67,8 @@
 
         .google-maps iframe{
             margin-top: 2em;
-            width: 350px;
-            height: 400px;
+            width: 22em;
+            height: 25em;
             margin-left: 2.5em;
         }
     }
