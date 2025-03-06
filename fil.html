@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/css.css">
-    <link rel="stylesheet" href="index/css.css">
+    <link rel="stylesheet" href="styles/fil.css">
     <title>David Wascat</title>
 </head>
 <body>
@@ -45,22 +45,37 @@
             </div>
         </div>
     </div>
-
-
-
-    <div class="main-content">
-        <div class="container">
-            <h1>David WASCAT</h1>
-        </div>
+  
+    <div class="banner-fil">
+        <p class="overlay">Le fil info</p>
     </div>
 
-    <script>
+    <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100063527800456&amp;rdid=5c8WOwAEOIVRVmgx" data-tabs="messages &#xe9;v&#xe8;nements" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" style="margin-left: 3em; top: 50px; width: 500px;">
+        <blockquote cite="https://www.facebook.com/profile.php?id=100063527800456&amp;rdid=5c8WOwAEOIVRVmgx" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=100063527800456&amp;rdid=5c8WOwAEOIVRVmgx">Infirmier Libéral Wascat David</a></blockquote>
+    </div>  
+
+    <div id="fb-root"></div>
+
+    <div class="boutons-lien">
+        <a href="https://www.ordre-infirmiers.fr/"><button id="bouton-lien-infirmier"><p class="lien-ordre">Site de l'Ordre des infirmiers</p></button></a>
+    </div>  
+
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v22.0">
         let btn = document.querySelector("#hamburger");
         let sidebar = document.querySelector(".sidebar");
 
         btn.onclick = function () {
             sidebar.classList.toggle('active');
         };
+
+        var $el = document.querySelector('.banner')
+            , str = ""
+            , imgHTML = $el.innerHTML
+            , i, i2;
+        for( i=0,i2=2; i<i2; i++ ){
+            str += imgHTML;
+        }
+        $el.innerHTML = str;
     </script>
 </body>
 </html>
