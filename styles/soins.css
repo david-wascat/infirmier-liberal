@@ -64,7 +64,7 @@
         z-index: -1;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url('images/pansement1.jpg');
+        background-image: url('./images/pansement1.jpg');
         height: 20em;
         width: 20em;
     }
@@ -78,7 +78,7 @@
         position: relative;
         z-index: -1;
         background-size: cover;
-        background-image: url('images/enfant-perf.jpg');
+        background-image: url('./images/enfant-perf.jpg');
         height: 20em;
         width: 20em;
     }
@@ -89,7 +89,7 @@
         z-index: -1;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url('images/Soins_hygiene_confort_850_523.jpg');
+        background-image: url('./images/Soins_hygiene_confort_850_523.jpg');
         height: 20em;
         width: 20em;
     }
@@ -199,7 +199,7 @@
             z-index: -1;
             margin-left: 3em;
             background-size: contain;
-            background-image: url('images/pansement1.jpg');
+            background-image: url('./images/pansement1.jpg');
             height: 200px;
             width: 200px;
         }
@@ -209,7 +209,7 @@
             z-index: -1;
             margin-left: 3em;
             background-size: contain;
-            background-image: url('images/enfant-perf.jpg');
+            background-image: url('./images/enfant-perf.jpg');
             height: 200px;
             width: 200px;
         }
@@ -222,7 +222,7 @@
             background-size: cover;
 
             background-repeat: no-repeat;
-            background-image: url('images/Soins_hygiene_confort_850_523.jpg');
+            background-image: url('./images/Soins_hygiene_confort_850_523.jpg');
             height: 200px;
             width: 200px;
         }
