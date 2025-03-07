@@ -6,7 +6,6 @@
         background-position: center;
         display: block;
         height: 30em;
-        z-index: -1;
       }
 
     .overlay {
@@ -40,7 +39,6 @@
             display: block;
             height: 20em;
             width: 100%;
-            z-index: -1;
           }
     
         .overlay {
