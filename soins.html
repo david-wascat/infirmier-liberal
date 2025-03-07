@@ -62,26 +62,29 @@
 
     <div class="flex-mobile">
         <div id="bannerimage">
-            <div class="soins-courants">
-                <img src="images/pansement1.jpg">
-                <div class="soins-courants-texte"><a href="#soins-courants"><p>Soins courants</p></a></div>
-            </div>
-            <div class="soins-spécialisés">
-                <img src="images/enfant-perf.jpg">
-                <div class="soins-spécialisés-texte"><a href="#soins-spécialisés"><p>Soins spécialisés</p></a></div>
-            </div>
-            <div class="soins-d-hygiène">
-                <img src="images/Soins_hygiene_confort_850_523.jpg">
-                <div class="soins-d-hygiène-texte"><a href="#soins-d-hygiène"><p>Soins pour le maintien à domicile</p></a></div>
-            </div>
+            <a href="#soins-courants">
+            <button class="soins-courants">
+                <p class="soins-courants-texte">Soins courants</p>
+            </button>
+            </a>
+            <a href="#soins-spécialisés">
+                <button class="soins-spécialisés">
+                    <p class="soins-spécialisés-texte">Soins spécialisés</p>
+                </button>
+            </a>
+            <a href="#soins-d-hygiène">
+                <button class="soins-d-hygiène">
+                    <p class="soins-d-hygiène-texte">Soins d'hygiène</p>
+                </button>
+            </a>
         </div>
     </div>
 
 
     <div class="soins-listes">
       <div id="soins-courants">
-          <p class="titre-banner-soins">Les soins courants</p> <br>
-          <p style="font-size: 20px; color: white;">- Prélèvements et injections<br>
+          <p class="titre-banner-soins">Les soins courants :</p> <br>
+          <p class="soins-texte">- Prélèvements et injections<br>
             - Pansements courants<br>
             - Pansements lourds & complexes<br>
             - Pose de sonde, alimentation<br>
@@ -95,8 +98,8 @@
 
       <div style="display: flex;" id="soins-spécialisés">
         <div>
-          <p class="titre-banner-soins">Les soins spécialisés</p> <br>
-          <p style="font-size: 20px; color: white;">- Soins d'entretien des cathéters <br>
+          <p class="titre-banner-soins">Les soins spécialisés :</p> <br>
+          <p class="soins-texte">- Soins d'entretien des cathéters <br>
             - Injections & Prélèvements<br>
             - Perfusion intraveineuse par l’intermédiaire <br> d’un cathéter veineux central ou d’un site implanté<br>
             - Actes du traitement à domicile d'un patient <br> immunodéprimé ou cancéreux<br>
@@ -109,12 +112,9 @@
       </div>
 
       <div style="display: flex;" id="soins-d-hygiène">
-        <div style="  padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 20px;
-        padding-bottom: 20px; background-color: rgba(36, 72, 85, .6);">
-          <p class="titre-banner-soins">Les soins pour le maintien à domicile</p> <br>
-          <p style="font-size: 20px; color: white;">Sa durée varie d'un patient à l'autre, notamment<br>
+        <div>
+          <p class="titre-banner-soins">Les soins pour le maintien à domicile :</p> <br>
+          <p class="soins-texte">Sa durée varie d'un patient à l'autre, notamment<br>
             en raison de son âge, de son handicap, de son niveau <br> de recouvrement de santé. <br>
             Les soins d'hygiène - autrement dit "toilette" - sont <br> d'une durée moyenne de 30 minutes.<br>
           </p>
