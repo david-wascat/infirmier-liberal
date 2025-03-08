@@ -15,9 +15,11 @@
     }
     
     .banner {
-        text-align: center;
-        color: white;
-      }
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: -1;
+  }
     
     .overlay {
         position: absolute;
