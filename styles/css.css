@@ -267,7 +267,7 @@ body {
         color: white;
         margin-top: -4.8em;
         font-size: 1.5em;
-        margin-left: 10em;
+        margin-left: 15em;
     }
 
     .numero-adresse {
@@ -275,7 +275,7 @@ body {
         color: white;
         margin-top: -5.5em;
         font-size: 1.5em;
-        margin-left: 23em;
+        margin-left: 28em;
     }
 
     .horaires {
@@ -283,7 +283,7 @@ body {
         color: white;
         margin-top: -4.8em;
         font-size: 1.5em;
-        margin-left: 34em;
+        margin-left: 39em;
     }
 
     .contact {
@@ -291,7 +291,7 @@ body {
         color: white;
         margin-top: -3.8em;
         font-size: 1.5em;
-        margin-left: 40em;
+        margin-left: 45em;
     }
 }
 
