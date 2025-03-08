@@ -55,7 +55,7 @@
         transition: all 1s ease;
     }
 
-    #bannerimage button {
+    #bannerimage a {
         margin-bottom: 1em;
         margin-left: 3em;
     }
@@ -191,7 +191,7 @@
             color: white;
         }
 
-        #bannerimage button {
+        #bannerimage a {
             margin-bottom: 1em;
         }
 
