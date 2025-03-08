@@ -7,6 +7,7 @@
             display: block;
             height: 20em;
             width: 100%;
+            z-index: -2;
           }
     
         .overlay {
@@ -44,6 +45,7 @@
             display: block;
             height: 20em;
             width: 100%;
+            z-index: -2;
           }
     
         .overlay {
