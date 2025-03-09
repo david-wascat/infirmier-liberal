@@ -40,12 +40,12 @@
   .formulaire {
     background-color: #90aead;
     margin-top: 50px;
-    padding-left: 300px;
+    padding-left: 5em;
   }
 
   .formulaire input {
     height: 40px;
-    width: 600px;
+    width: 250px;
     margin-bottom: 30px;
     border: none;
     border-radius: 15px;
@@ -87,6 +87,7 @@
     margin-bottom: 30px;
     border: none;
     border-radius: 15px;
+    width: 250px
   }
 }
 
