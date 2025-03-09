@@ -23,6 +23,8 @@
         .boutons-lien {
             margin-top: 7em;
             margin-left: 7em;
+            display: flex;
+            flex-direction: column;
         }
 
         #bouton-lien-infirmier {
