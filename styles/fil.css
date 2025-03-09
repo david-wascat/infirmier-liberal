@@ -24,7 +24,6 @@
             margin-top: 7em;
             margin-left: 7em;
             display: flex;
-            flex-direction: column;
         }
 
         #bouton-lien-infirmier {
@@ -36,6 +35,15 @@
             color: white;
             font-weight: bold;
         }
+
+    #bouton-lien-facebook {
+            background-color: #273ea5;
+            border: none;
+        }
+
+       #bouton-lien-google {
+          background-color: #ef5350;
+          border: none;
     }
     
     @media screen and (max-device-width: 768px) {
@@ -63,12 +71,17 @@
         .boutons-lien {
             margin-top: 7em;
             margin-left: 7em;
+            flex-direction: column;
         }
 
-        #bouton-lien-infirmier {
-            background-color: #244855;
+        #bouton-lien-facebook {
+            background-color: #273ea5;
             border: none;
         }
+
+       #bouton-lien-google {
+          background-color: #ef5350;
+          border: none;
 
         .boutons-lien p {
             color: white;
