@@ -48,11 +48,43 @@
 
 
 
-    <div class="main-content">
-        <div class="container">
-            <h1>David WASCAT</h1>
-        </div>
-    </div>
+    <div class="banner">
+        <button class="banner-image" style="background-image: url(images/oye-plage3.jpg); "
+        ><p style="color: white; font-size: 30px; margin-left: 200px; margin-top: 200px;">Contact</p></button>
+      </div>
+
+      <div class="google">
+        <div><p style="color: white; text-shadow: black 1px 1px 1px; font-size: 30px;">Retrouvez David WASCAT sur </p></div>
+        <div id="google" style="position: relative; margin-top: -42px; margin-left: 410px; font-size: 30px;"><a href="https://maps.app.goo.gl/M7i4mdTBXeCfMXWd7"><p style="color: white; text-shadow: black 1px 1px 1px;">Google</p></a></div>
+        <div style="position: relative; margin-top: -41px; margin-left: 515px; font-size: 30px;"><p style="color: white; text-shadow: black 1px 1px 1px;"> et </p></div>
+        <div id="facebook" style="position: relative; margin-top: -40px; margin-left: 550px; font-size: 30px;"><a href="https://www.facebook.com/share/15ye5Cv5an/"><p style="color: white; text-shadow: black 1px 1px 1px;">Facebook</p></a></div>
+      </div>
+
+      <div class="formulaire">
+        <p style="color: white; text-shadow: black 1px 1px 1px; font-size: 30px;">Vous souhaitez prendre rendez vous ? Privilégiez l'appel téléphonique. Vous pouvez également remplir ce formulaire :</p>
+        <form >
+          <label></label>
+          <input type="text" name="nom" id="nom" placeholder="Nom"> <br>
+          <input type="text" name="prénom" id="prénom" placeholder="Prénom"> <br>
+          <input type="text" name="adresse" id="adresse" placeholder="Adresse"> <br>
+          <input type="number" name="numéro de téléphone" id="téléphone" placeholder="Numéro de téléphone"> <br>
+          <textarea name="message" cols="80" rows="10" id="message" placeholder="Votre message/demande de soins"></textarea> <br>
+          <button type="button" id="envoyer" onclick="sendSMS()">Envoyer</button>
+        </form>
+        
+      </div>
+
+      <div class="footer">
+        <p style="font-size: 20px; color: white; margin-left: 250px;">Liens utiles :</p>
+        <a href="https://www.ordre-infirmiers.fr/"><p class="lien-ordre">Site de l'Ordre des infirmiers</p></a> <br>
+        <p style="color: white; margin-left: 250px;">Ce site est un site d'information.<br>
+        Son but est d'informer les patients sur les soins pratiqués par David WASCAT.<br>
+        Il n'a pas pour vocation la promotion de son activité, conformément aux directives de l'Ordre infirmier.<br>
+        Ce site tient compte de l'article R.4312-37 du Code de la santé publique : "La profession d'infirmier ne doit pas être pratiquée comme un commerce. <br>
+        Tous les procédés directs ou indirects de réclame ou de publicité sont interdits aux infirmiers, infirmières (...)"</p><br>
+        <p style="color: white; margin-left: 250px;">Copyright © Tous droits réservés</p>
+      </div>
+
 
     <script>
         let btn = document.querySelector("#hamburger");
