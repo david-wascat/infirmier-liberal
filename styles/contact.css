@@ -1,0 +1,62 @@
+#google:hover {
+    text-decoration: underline;
+    color: white;
+  }
+
+  #facebook:hover {
+    text-decoration: underline;
+    color: white;
+  }
+
+  .formulaire {
+    background-color: #90aead;
+    margin-top: 50px;
+    padding-left: 300px;
+  }
+
+  .formulaire input {
+    height: 40px;
+    width: 600px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 15px;
+  }
+
+  input::placeholder {
+    padding-left: 0px;
+  }
+
+  input {
+    padding-left: 15px;
+  }
+
+  textarea {
+    padding-top: 15px;
+    padding-left: 15px;
+  }
+
+  #nom{
+    margin-top: 30px;
+  }
+
+  #envoyer {
+    padding: 20px 20px;
+    background-color: #244855;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 20px;
+  }
+
+  #envoyer:hover {
+    cursor: pointer;
+  }
+
+  #message {
+    height: 250px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 15px;
+  }
+
