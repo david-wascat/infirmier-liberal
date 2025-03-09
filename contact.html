@@ -95,6 +95,29 @@
         btn.onclick = function () {
             sidebar.classList.toggle('active');
         };
+
+        function sendSMS() {
+            // Get the values from the form inputs
+            var name = document.getElementById("nom").value;
+            var surname = document.getElementById("prénom").value;
+            var address = document.getElementById("adresse").value;
+            var message = document.getElementById("message").value;
+
+            // Create the SMS body with the form data
+            var smsBody = "Name: " + name + "\n" +
+                          "Surname: " + surname + "\n" +
+                          "Address: " + address + "\n" +
+                          "Message: " + message;
+
+            // Replace with the phone number where the SMS should be sent
+            var phoneNumber = "phonenumber"; 
+
+            // Create the SMS link
+            var smsLink = "sms:" + phoneNumber + "?body=" + encodeURIComponent(smsBody);
+
+            // Open the SMS app with the pre-filled message
+            window.location.href = smsLink;
+        }
     </script>
 </body>
 </html>
