@@ -74,16 +74,21 @@
         }
 
         #bouton-lien-facebook {
-            background-color: #273ea5;
-            border: none;
-        }
+           background-color: #273ea5;
+           border: none;
+           height: 4em;
+           color: white;
+           width: 10em;
+           border-radius: 10%;
+    }
 
        #bouton-lien-google {
           background-color: #ef5350;
           border: none;
+           height: 4em;
+           color: white;
+           width: 10em;
+           border-radius: 10%;
+    }
 
-        .boutons-lien p {
-            color: white;
-            font-weight: bold;
-        }
     }
