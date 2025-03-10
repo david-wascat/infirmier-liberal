@@ -94,6 +94,11 @@
         padding-left: 2em;
         margin-bottom: -20px;
     }
+
+    .footer a {
+        color: white;
+        text-decoration: none;
+    }
 }
 
 @media screen and (max-device-width: 768px) {
@@ -192,6 +197,11 @@
         background-color: #244855;
         padding-left: 2em;
         margin-bottom: -20px;
+    }
+
+    .footer a {
+        color: white;
+        text-decoration: none;
     }
 }
 
